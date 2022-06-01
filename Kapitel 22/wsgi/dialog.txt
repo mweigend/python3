@@ -1,0 +1,7 @@
+Tina: Hallo, ich bin gerade gekommen. <br>
+Tina: Guten Morgen! <br>
+Tom: Hallo, ich bin gerade gekommen. <br>
+Tina: Hallo, ich bin gerade gekommen. <br>
+Tina: Hi <br>
+Tom: Hallo Tina <br>
+Tom: Guten Tag <br>
