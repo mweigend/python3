@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<gruppe>
+    <bezeichnung>Projekt-Team</bezeichnung>
+    <person>
+        <name>Sabrina Maier</name>
+        <email>sabrina@maier.de</email>
+        <email>sm@global-design.de</email>
+    </person>
+    <person>
+        <name>Tom Kahlenbaum</name>
+        <email>tk@global-design.de</email>
+    </person>
+</gruppe>

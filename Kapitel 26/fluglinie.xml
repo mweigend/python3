@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<fluglinie>
+    <flughafen name="Dortmund">
+        <ziel>München</ziel>
+        <ziel>Hamburg</ziel>
+        <ziel>Berlin</ziel>
+    </flughafen>
+    <flughafen name="Berlin">
+        <ziel>Dortmund</ziel>
+        <ziel>Hamburg</ziel>
+    </flughafen>
+    <flughafen name="München">
+        <ziel>Dortmund</ziel>
+    </flughafen>
+    <flughafen name="Hamburg">
+        <ziel>Dortmund</ziel>
+        <ziel>Berlin</ziel>
+    </flughafen>   
+</fluglinie>
+            
+        
+    
