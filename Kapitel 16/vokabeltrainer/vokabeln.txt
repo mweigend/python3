@@ -1,0 +1,5 @@
+﻿kitchen Küche 
+house Haus 
+floor Etage Boden
+wall Wand Mauer
+garden Garten
