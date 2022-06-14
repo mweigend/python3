@@ -1,0 +1,14 @@
+F21$Hauptflur$F22 F23 R21 R22
+F22$Nordflur$R23 R24 R25 R27 F23
+F23$Südflur$R31 R30 R29 R28 F22
+R21$Büro von Susi Timms$F21
+R22$Medienraum mit Beamer und Computer$F21
+R23$WC Damen$F22
+R24$Büro von Dr. Froh$F22 R25
+R25$Computer-Labor$R24 F22 R26
+R26$Büro Prof. Zecke$F22 R27 R25
+R27$Vorzimmer Prof. Zecke, Elena Klar$R26 F22
+R28$Seminarraum$F23 R29
+R29$Bibliothek mit Kaffeemaschine$F23 R28
+R30$Büro Sven Kurz$F23
+R31$WC Herren$F23

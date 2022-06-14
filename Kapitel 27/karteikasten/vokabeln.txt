@@ -1,0 +1,6 @@
+key Schlüssel Taste 
+slice Scheibe Schnitte Stück
+value Wert
+object Objekt
+update Aktualisierung
+error Fehler
