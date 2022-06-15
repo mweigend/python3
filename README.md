@@ -1,5 +1,5 @@
 # python3
-<p>Programmbeispiele und Lösungen zum Buch "Python 3 - Lernen und professionell anwenden"</p>
+<p><b>Programmbeispiele und Lösungen zum Buch "Python 3 - Lernen und professionell anwenden"</b></p>
 
 Bitte denken Sie bei den Skripten daran, die verwendeten Pfade und Shebang-Zeilen an Ihr System anzupassen. 
 Auf Linux-Systemen funktioniert meist <br/>
