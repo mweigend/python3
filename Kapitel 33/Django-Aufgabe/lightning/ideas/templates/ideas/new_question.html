@@ -1,0 +1,32 @@
+<h1>Neue Frage</h1>
+{% if message %}                      
+  <p><strong>{{ message }}</strong></p>
+{% endif %}
+
+<form action="{% url 'ideas:save_new_question' %}" method="post">
+  {% csrf_token %}
+  <p>Schlüsselwort:  
+    <input type ="password" size=20 name="keyword" />
+  </p>
+  <p>Frage: <input type ="text" size=80 name="text"
+    value="{{ question_text }}" /> </p>
+  <p>Name (Pseudonym): 
+  <input type="text" size= 20 name="author" /> </p>
+  <p>Lebensdauer der Frage:<br/>
+  {% for days in lifespan_choices %}
+   <input type="radio" name="lifespan" value="{{ days }}">
+   {{ days }} {% if days == 1 %}Tag {% else %}Tage{% endif %} 
+  <br/>
+  {% endfor %} </p>
+  <p>Lebensdauer einer Idee:<br/>
+   <input type="radio" name="lifespan_ideas" value="1" checked="checked" />
+   1 Stunde </br>
+    <input type="radio" name="lifespan_ideas" value="6"/>
+   6 Stunden </br> 
+  <input type="submit" value="Frage speichern">
+  </p> 
+</form>
+<p><a href="{% url 'ideas:index' %}">
+Zurück zur Startseite</a></p>
+
+

@@ -1,0 +1,21 @@
+<h1> Ideenspeicher</h1>
+{% if question_list %}
+  <ul>
+  {% for question in question_list %}
+    <li><a href="{% url 'ideas:question_index' question.id %}">
+      {{ question.text }}</a> <br/>
+      <i> bis {{ question.end }}</i>
+    </li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>Noch keine Fragen.</p>
+{% endif %}
+<p><a href="{% url 'ideas:new_question' %}">Neue Frage</a></p>
+
+<form action="{% url 'ideas:search' %}" method="post">  {% csrf_token %} 
+  <p>Suchbegriff:  <input type="text" size=20 name="text" />
+     <input type="submit" value="Suchen"/>
+  </p>
+</form>
+

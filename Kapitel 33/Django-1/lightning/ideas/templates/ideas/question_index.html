@@ -1,0 +1,12 @@
+<h1> Ideen gesucht!</h1>
+{{ question.author }} fragt: 
+<h3>{{ question.text }}</h3> 
+  <ul>
+  {% for idea in idea_list %}
+    <li>{{ idea.text }}</a> </i>
+    </li>
+  {% endfor %}
+  </ul>
+<p><a href="/ideas/">Zurück</a></p> 
+
+

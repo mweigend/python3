@@ -1,0 +1,23 @@
+<h1> Ideen gesucht!</h1>
+{{ question.author }} fragt: 
+<h3>{{ question.text }}</h3> 
+  <ul>
+  {% for idea in idea_list %}
+    <li>{{ idea.text }}</i>
+    </li>
+  {% endfor %}
+  </ul>
+
+{% if message %}<p><strong>{{ message }}</strong></p>{% endif %}
+<form action="{% url 'ideas:save_new_idea' question.id %}" method="post">
+  {% csrf_token %} 
+  <p>Neue Idee:   <input type ="text" size= 60 name="text"
+    {% if idea_text %}value="{{ idea_text }}"{% endif %}/>
+  </p>
+  <input type="submit" value="Idee senden">
+</form>
+
+
+<p><a href="{%url 'ideas:index' %}">Zurück zur Startseite</a></p> 
+
+

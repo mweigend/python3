@@ -1,0 +1,16 @@
+<h1> Ideenspeicher</h1>
+{% if question_list %}
+  <ul>
+  {% for question in question_list %}
+    <li><a href="/ideas/question/{{ question.id }}/">
+      {{ question.text }}</a> <br/>
+      <i> bis {{ question.end }}</i>
+    </li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>Noch keine Fragen.</p>
+{% endif %}
+<p><a href="/ideas/new/">Neue Frage</a></p>
+
+

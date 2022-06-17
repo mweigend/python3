@@ -1,0 +1,12 @@
+<h1>Suchergebnisse</h1>
+{% if message %}<p><strong>{{ message }}</strong></p>
+{% else %}
+  {% for idea, question in results %}
+  <p>
+    Idee: <i>{{ idea.text }}</i> (zur Frage <i>{{ question.text }}</i>)
+  </p>
+  {% endfor %}
+{% endif %}
+
+<p><a href="{% url 'ideas:index' %}">Zurück zur Startseite</a></p>
+
